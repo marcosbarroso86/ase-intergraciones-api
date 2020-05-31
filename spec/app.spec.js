@@ -1,18 +1,20 @@
 var request = require("request");
+var assert = require("chai").assert;
 
-var base_url = "http://localhost:8888/api/"
+var base_url = "http://localhost:8080/api/integrations"
 
 describe("Auditoria de Terreno Server", () => {
 
-    describe("GET /employee", () => {
+    describe("GET /Enterprises", () => {
         
-        const resource = "employee";
+        const resource = "/enterprises";
 
         it("returns status code 200", () => {
             request.get( base_url + resource, (error, response, body) => {
-                expect(response.statusCode).toBe(200);
+                assert(response.statusCode).toBe(200);
             });
         });
 
     });
+
 });
