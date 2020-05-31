@@ -40,14 +40,14 @@ gulp.task('start', () => {
 		script: config.server.src,
 		ext: 'js',
 		env: {
-			'NODE_ENV': 'development',
-			'type': "oracle",
-			'host': "localhost",
-			'port': '1521',
-			'username': "SYSTEM",
-			'password': "Welcome_1",
-			'sid': 'ORCL18',
-			'database': "COMPANY",
+			'NODE_ENV'	: 'development',
+			'DB_TYPE'	: "mssql",
+			'DB_HOST'	: "172.16.1.74\ASE",
+			'DB_PORT'	: '1500',
+			'DB_USER'	: "usrappventas_app",
+			'DB_PASS'	: "75atzCXNZdOZTBCg",
+			'DB_NAME'	: "opdevase_desa",
+			"DB_SCHEMA"	: "ventas",
 			"JWT_SECRET" : 'my_secret_key'
 		}
 

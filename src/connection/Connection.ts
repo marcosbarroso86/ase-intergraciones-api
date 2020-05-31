@@ -1,6 +1,5 @@
 import "reflect-metadata";
 import {Connection, createConnection} from "typeorm";
-import { Employee } from "../model/Employee";
 import Enterprise from "../model/Enterprise";
 
 export class Repository {
@@ -14,15 +13,14 @@ export class Repository {
             } else {
 
                 let options:any = {
-                    type: process.env.type,
-                    host: process.env.host,
-                    port: parseInt(process.env.port),
-                    username: process.env.username,
-                    password: process.env.password,
-                    sid: process.env.sid,
-                    database : process.env.database,
+                    type: process.env.DB_TYPE,
+                    host: process.env.DB_HOST,
+                    port: parseInt(process.env.DB_PORT),
+                    username: process.env.DB_USER,
+                    password: process.env.DB_PASS,
+                    database : process.env.DB_NAME,
+                    schema : process.env.DB_SCHEMA,
                     entities : [
-                        Employee,
                         Enterprise
                     ],
                     synchronize : false,
