@@ -42,7 +42,7 @@ gulp.task('start', () => {
 		env: {
 			'NODE_ENV'	: 'development',
 			'DB_TYPE'	: "mssql",
-			'DB_HOST'	: "172.16.1.74\ASE",
+			'DB_HOST'	: "NEWNT11.ase.local",
 			'DB_PORT'	: '1500',
 			'DB_USER'	: "usrappventas_app",
 			'DB_PASS'	: "75atzCXNZdOZTBCg",

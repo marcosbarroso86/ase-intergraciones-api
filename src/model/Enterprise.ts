@@ -3,12 +3,12 @@ import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 @Entity("EFECTO")
 export default class Enterprise {
 
-    @PrimaryGeneratedColumn()
+    @PrimaryGeneratedColumn({name : 'EfeNroAse'})
     public id: number;
 
-    @Column()
+    @Column({name : 'EfeCuit'})
     public cuit: string;
 
-    @Column()
+    @Column({name : 'EfeRazSoc'})
     public businessName: string
 }
