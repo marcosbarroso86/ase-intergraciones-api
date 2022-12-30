@@ -44,7 +44,7 @@
     "jsonwebtoken": "^8.5.1",
     "log4js": "^6.3.0",
     "method-override": "^2.3.9",
-    "mocha": "^7.2.0",
+    "mocha": "^10.2.0",
     "mssql": "^6.2.0",
     "mysql": "^2.15.0",
     "oracledb": "^4.0.1",
